@@ -15,9 +15,9 @@ var (
 )
 
 type actions struct {
-	TotalMinutesUsed     int `json:"total_minutes_used"`
-	TotalPaidMinutedUsed int `json:"total_paid_minutes_used"`
-	IncludedMinutes      int `json:"included_minutes"`
+	TotalMinutesUsed     int     `json:"total_minutes_used"`
+	TotalPaidMinutedUsed float64 `json:"total_paid_minutes_used"`
+	IncludedMinutes      int     `json:"included_minutes"`
 }
 
 type actionsCollector struct {

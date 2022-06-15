@@ -14,9 +14,9 @@ var (
 )
 
 type storage struct {
-	DaysLeftInBillingCycle       int `json:"days_left_in_billing_cycle"`
-	EstimatedPaidStorageForMonth int `json:"estimated_paid_storage_for_month"`
-	EstimatedStorageForMonth     int `json:"estimated_storage_for_month"`
+	DaysLeftInBillingCycle       int     `json:"days_left_in_billing_cycle"`
+	EstimatedPaidStorageForMonth float64 `json:"estimated_paid_storage_for_month"`
+	EstimatedStorageForMonth     int     `json:"estimated_storage_for_month"`
 }
 
 type storageCollector struct {
